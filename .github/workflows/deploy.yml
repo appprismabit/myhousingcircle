@@ -22,5 +22,5 @@ jobs:
           script: |
             cd /home/myhousingcircle/domains/api.myhousingcircle.com/public_html/myhousingcircle
             git pull origin main
-            npm install --production
+            npm ci --omit=dev
             pm2 restart myhousing-api
