@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ secrets.APP_HOST }}
           username: ${{ secrets.APP_USERNAME }}
-          key: ${{ secrets.APP_SSH_PASSWORD }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/myhousingcircle/domains/api.myhousingcircle.com/public_html/myhousingcircle
             git pull origin main
